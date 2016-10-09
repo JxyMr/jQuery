@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Banner</title>
+	<style>
+		.banner{
+			position: relative;
+			width: 400px;
+			height: 320px;
+			box-shadow: 0 0 2px 2px rgb(102,102,102)
+		}
+		.banner a{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-size: 100% 100%;
+			display: none;
+		}
+		.banner a.current{
+			display: block
+		}
+	</style>
+</head>
+<body>
+	<div class="banner banner1">
+		<a class="current" href="#" style="background-image: url(./image/1.jpg);"></a>
+		<a href="#" style="background-image: url(./image/2.jpg);"></a>
+		<a href="#" style="background-image: url(./image/3.jpg);"></a>
+	</div>
+	<div class="banner banner2"></div>
+	<script src="../lib/jQuery@1.12.4.min.js"></script>
+	<script src="./js/demo.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>page</title>
+	<style>
+		a{
+			color: inherit;
+		} 
+		.page{
+			font: 14px arial;
+			color:#333;	
+		}
+		.page .pagenum{
+			width: 448px;
+			height: 36px;
+			overflow: hidden;
+			float:left;
+		}
+		.page .pagenum .num{
+			width: 99999px;
+			position: relative;
+		}
+		.page a {
+		    display: inline-block;
+		    height: 34px;
+		    text-align: center;
+		    line-height: 34px;
+		    text-decoration: none;
+		    overflow: hidden;
+		    margin-right: 9px;
+		    background: white;
+		    border: 1px solid #e1e2e3;
+		}
+		.page a.m{
+			 width: 34px;
+		}
+		.page a.n {
+		    padding: 0 18px;
+		    border: 1px solid #e1e2e3;
+		    float:left;
+		}
+		.page a:hover{
+			background: #f2f8ff;
+    		border: 1px solid #38f;
+		}
+		.page a.n.hide{
+			display: none
+		}
+		.page a.m.current{
+			border: transparent;
+			font-weight: bold;
+		}
+		.page a.m.current:hover{
+			background:none;
+		}
+	</style>
+</head>
+<body>
+	<div class="page">
+		<div class="pagenum">
+			<div class="num"></div>
+		</div>
+	</div>
+	<script src="./jQuery@1.12.4.min.js"></script>
+	<script src="demo.js"></script>
+</body>
+</html>
